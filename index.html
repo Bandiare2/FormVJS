@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>my-project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+  </head>
+  <body>
+    <div id="app" >
+    <!-- built files will be auto injected -->
+    <h2 id="titre" align="center">Formulaire</h2>
+      <div class="container">
+    <form>
+    <div class="row">
+    <div class="col-md-6">
+    <label>NOM</label><input type="text" name="" v-model="user.name" placeholder="nom" class="form-control">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+    <label>Password</label><input type="password" name="" v-model="user.password" placeholder="mot de passe" class="form-control"><br>
+    </div>
+    </div>
+<button class="btn btn-success" v-on:click="salut">envoyer</button>
+
+    </form>
+     </div>
+
+
+    <script src="js.js"> </script>
+    </div>
+  </body>
+</html>
